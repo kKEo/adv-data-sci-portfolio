@@ -3,7 +3,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import datetime as dt
 import seaborn as sns
 
 
@@ -12,8 +11,8 @@ df = pd.read_csv('../data/text-trip-data.csv')
 # print(df.size)
 # df.info()
 
-df['tpep_pickup_datetime']=pd.to_datetime(df['tpep_pickup_datetime'])
-df['tpep_dropoff_datetime']=pd.to_datetime(df['tpep_dropoff_datetime'])
+df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
+df['tpep_dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
 
 
 def plot(dataframe):
@@ -83,7 +82,6 @@ def tip_amount_over_10_by_vendoer():
 
 def passenger_counts():
     df['passenger_count'].value_counts()
-
 
 
 def mean_tip_passenger_counts():

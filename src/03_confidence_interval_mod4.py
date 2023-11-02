@@ -7,7 +7,7 @@ aqi = pd.read_csv('../data/c4_epa_air_quality.csv')
 print(aqi.describe(include='all'))
 print(aqi['state_name'].value_counts())
 
-rre_states = ['California','Florida','Michigan','Ohio','Pennsylvania','Texas']
+rre_states = ['California', 'Florida', 'Michigan', 'Ohio', 'Pennsylvania', 'Texas']
 
 # Subset `aqi` to only consider these states.
 aqi_rre = aqi[aqi['state_name'].isin(rre_states)]

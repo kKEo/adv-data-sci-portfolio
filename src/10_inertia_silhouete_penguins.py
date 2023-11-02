@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-penguins = pd.read_csv("../data//penguins.csv")
+penguins = pd.read_csv("../data/penguins.csv")
 
 print(penguins['species'].unique())
 print(penguins['species'].value_counts(dropna=False))
